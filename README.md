@@ -21,14 +21,23 @@ compile 'com.xin:Ftplibrary:1.0'
 
 # Sample Usage
 
+## Open Log
+
+log default is close , if you want open log
+
+```
+FtpUtils ftpUtils = new FtpUtils("host", port, "userName", "userPsw");
+ftpUtils.setDebug(true);
+```
+
 ## Upload File
 
 ```
-        FtpUtils f = new FtpUtils("host", port, "userName", "userPsw");
-        if (f.open()) {
+        FtpUtils ftpUtils = new FtpUtils("host", port, "userName", "userPsw");
+        if (ftpUtils.open()) {
             String fileName = "111.txt";
             //upload(本地文件目录和文件名,上传到服务器的文件名,FTP目录如:/path1/pathb2/,如果目录不存在会自动创建目录)
-            f.upload(getDir() + "/tmpUserImage.jpg",
+            ftpUtils.upload(getDir() + "/tmpUserImage.jpg",
                     "person_001.jpg",
                     "/path1");
         }
