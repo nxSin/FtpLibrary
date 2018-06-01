@@ -16,7 +16,7 @@ repositories {
 2. add dependencies
 
 ```
-compile 'com.xin:Ftplibrary:1.0'
+compile 'com.xin:Ftplibrary:1.1'
 ```
 
 # Sample Usage

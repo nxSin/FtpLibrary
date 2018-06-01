@@ -48,7 +48,7 @@ dependencies {
 //def gitUrl = 'https://github.com/nxSin/FtpLibrary.git'   // Git仓库的url，非要写个vcs的url,否则报404
 //Properties properties = new Properties()
 //properties.load(project.rootProject.file('local.properties').newDataInputStream())
-//version = "1.0" //发布版本号
+//version = "1.1" //发布版本号
 //group = "com.xin" //最终引用形式，如compile 'com.xin.ftplibrary:1.0'，其中ftplibrary在后面配置
 //bintray {
 //    user = properties.getProperty("bintray.user")
@@ -62,10 +62,10 @@ dependencies {
 //        userOrg = 'nsinlibrary' //自己创建的organization名称
 //        publish = true // 是否是公开项目，公开别人可以引用
 //        version {
-//            name = '1.0'
+//            name = '1.1'
 //            desc = 'this is a ftp library for Android.'//描述，自己定义
 //            released  = new Date()
-//            vcsTag = 'v1.0'
+//            vcsTag = 'v1.1'
 //            attributes = ['gradle-plugin': 'com.use.less:com.use.less.gradle:gradle-useless-plugin']
 //        }
 //    }
