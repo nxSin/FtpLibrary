@@ -38,7 +38,7 @@ ftpUtils.setDebug(true);
         ftpUtils.setFtpModel(FtpUtils.ActiveMode);
         if (ftpUtils.open()) {
             String fileName = "111.txt";
-            //upload(localUrl,remote fileName,FTP Path:/path1/pathb2/,will create when if not exist)
+            //upload(localUrl,remote fileName,FTP Path:/path1/pathb2/（will create when if not exist)
             ftpUtils.upload(getDir() + "/tmpUserImage.jpg",
                     "person_001.jpg",
                     "/path1");
