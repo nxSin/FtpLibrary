@@ -34,11 +34,11 @@ ftpUtils.setDebug(true);
 
 ```
         FtpUtils ftpUtils = new FtpUtils("host", port, "userName", "userPsw");
-        //连接前先设置连接模式，1为主动模式，2为被动模式。（默认为主动模式）
+        //set connect mode，1：active model，2：passivity mode（default）
         ftpUtils.setFtpModel(FtpUtils.ActiveMode);
         if (ftpUtils.open()) {
             String fileName = "111.txt";
-            //upload(本地文件目录和文件名,上传到服务器的文件名,FTP目录如:/path1/pathb2/,如果目录不存在会自动创建目录)
+            //upload(localUrl,remote fileName,FTP Path:/path1/pathb2/,will create when if not exist)
             ftpUtils.upload(getDir() + "/tmpUserImage.jpg",
                     "person_001.jpg",
                     "/path1");
